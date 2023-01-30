@@ -10,13 +10,13 @@ namespace UniversalLobCorpTTK
     public static class MathFunctions
     {
         // attack speed is 0.8 + (Justice / 143) * Base Weapon Swing Speed
-        public static double CalculateDPS(int TargetHealth, int Justice, double DamageMult, double SwingSpeed, int MinDamage, int MaxDamage, int Hits, int AttackLevel, int DefendLevel)
+        public static double CalculateDPS(int TargetHealth, int Justice, double DamageMult, double SwingSpeed, int MinDamage, int MaxDamage, int Hits, double LevelMult)
         {
             //uses a sample of 3 rolls of the attack to determine an average damage, and then
             //calculates dps based on that damage, and attack speed
-            double Damage1 = CalculateDamage(DamageMult, MinDamage, MaxDamage, Hits);
-            double Damage2 = CalculateDamage(DamageMult, MinDamage, MaxDamage, Hits);
-            double Damage3 = CalculateDamage(DamageMult, MinDamage, MaxDamage, Hits);
+            double Damage1 = CalculateDamage(DamageMult, MinDamage, MaxDamage, Hits, LevelMult);
+            double Damage2 = CalculateDamage(DamageMult, MinDamage, MaxDamage, Hits, LevelMult);
+            double Damage3 = CalculateDamage(DamageMult, MinDamage, MaxDamage, Hits, LevelMult);
             double AverageDamagePerHit = ((Damage1 + Damage2 + Damage3) / 3);
 
             //getting the hits per second
@@ -43,13 +43,14 @@ namespace UniversalLobCorpTTK
             return time;
         }
 
-        public static double Average(int TargetHealth, int Justice, double DamageMult, double SwingSpeed, int MinDamage, int MaxDamage, int Hits)
+        public static double Average(int TargetHealth, int Justice, double DamageMult, double SwingSpeed, int MinDamage, int MaxDamage, int Hits, int AttackingLevel, int DefendingLevel)
         {
             int i = 0;
             int totalTTK = 0;
+            double LevelMult = GetLevelDiffMult(AttackingLevel, DefendingLevel);
             while (i < 3)
             {
-                double DPS = CalculateDPS(TargetHealth, Justice, DamageMult, SwingSpeed, MinDamage, MaxDamage, Hits);
+                double DPS = CalculateDPS(TargetHealth, Justice, DamageMult, SwingSpeed, MinDamage, MaxDamage, Hits, LevelMult);
                 int TempTTK = TTK(TargetHealth, DPS);
                 totalTTK += TempTTK;
                 i++;
@@ -100,7 +101,7 @@ namespace UniversalLobCorpTTK
             return LevelMult;
         }
 
-        public static double CalculateDamage(double DamageMult, int MinDamage, int MaxDamage, int Hits)
+        public static double CalculateDamage(double DamageMult, int MinDamage, int MaxDamage, int Hits, double LevelMult)
         {
             int i = Hits;
             double damage = 0;
@@ -114,7 +115,7 @@ namespace UniversalLobCorpTTK
                 i--;
 
             }
-            double FinalDamage = damage * DamageMult;
+            double FinalDamage = damage * DamageMult * LevelMult;
             return FinalDamage;
         }
 
