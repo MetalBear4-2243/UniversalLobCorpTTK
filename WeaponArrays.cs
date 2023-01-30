@@ -26,5 +26,11 @@ namespace WeaponArrays
         {
             {"Tough", Tough }
         };
+
+        public readonly static String[] Wingbeat = new string[6] { "Wingbeat", "Zayin", "Red", "5", "7", "0.5" };
+        public readonly static Dictionary<string, string[]> wingbeat = new()
+        {
+            {"Wingbeat", Wingbeat }
+        };
     }
 }
