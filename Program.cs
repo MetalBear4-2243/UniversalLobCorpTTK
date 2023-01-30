@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WeaponArrays;
 
 namespace UniversalLobCorpTTK
 {
@@ -14,9 +13,8 @@ namespace UniversalLobCorpTTK
             Console.WriteLine("Welcome to the Lobotomy Corporation TTK Checker.");
             Console.WriteLine("This tool will allow you to roughly estimate the time to kill a target given one attacker.");
             Console.WriteLine("This will only give a rough estimate, and should not be regarded as completely accurate.");
-            
-            //string PenitenceLevel = penitence[]
-            
+
+            Console.WriteLine(WeaponArrays.Penitence[1]);
             
             GetInputs.AssignValues();
 

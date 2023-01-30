@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,6 +18,46 @@ namespace UniversalLobCorpTTK
         public static int Hits = 0;
         public static int AttackingLevel = 0;
         public static int DefendingLevel = 0;
+        
+        public static Array GetWeapon(string WeaponName)
+        {
+             string Weapon = WeaponName;
+            string[6] CurrentWeapon = new string[] { };
+                switch (Weapon)
+                {
+                    case "Penitence":
+                        LevelMult = 0.4;
+                        break;
+                    case -3:
+                        LevelMult = 0.6;
+                        break;
+                    case -2:
+                        LevelMult = 0.7;
+                        break;
+                    case -1:
+                        LevelMult = 0.8;
+                        break;
+                    case 0:
+                        LevelMult = 1;
+                        break;
+                    case 1:
+                        LevelMult = 1;
+                        break;
+                    case 2:
+                        LevelMult = 1.2;
+                        break;
+                    case 3:
+                        LevelMult = 1.5;
+                        break;
+                    case 4:
+                        LevelMult = 2;
+                        break;
+                    default:
+                        LevelMult = 1;
+                        break;
+                }
+
+        }
         
         public static void AssignValues()
         {
