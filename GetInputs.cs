@@ -13,7 +13,7 @@ namespace UniversalLobCorpTTK
         public static int Justice = 0;
         public static double DamageMult = 0;
         public static double SwingSpeed = 0;
-        public static int MinDam = 0
+        public static int MinDam = 0;
         public static int MaxDam = 0;
         public static int Hits = 0;
         public static int AttackingLevel = 0;
