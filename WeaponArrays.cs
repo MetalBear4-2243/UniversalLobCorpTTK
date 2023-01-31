@@ -26,7 +26,7 @@ namespace UniversalLobCorpTTK
         //TETH
         public readonly static String[] TrainingStandardEGO = new string[7] { "Training Standard EGO", "TETH", "White", "5", "7", "1", "0.5" };
         
-        public readonly static String[] Fourth Match Flame = new string[7] { "Fourth Match Flame", "TETH", "Red", "20", "30", "1", "0.2" };
+        public readonly static String[] FourthMatchFlame = new string[7] { "Fourth Match Flame", "TETH", "Red", "20", "30", "1", "0.2" };
         
         public readonly static String[] Loneliness = new string[7] { "Loneliness", "TETH", "White", "7", "14", "1", "1.5" };
         
@@ -75,77 +75,77 @@ namespace UniversalLobCorpTTK
         
         public readonly static String[] Galaxy = new string[7] { "Galaxy", "HE", "Black", "9", "15", "1", "0.5" };
 
-        public readonly static String[] Laetitia = new string[7] { "Laetitia", "HE", "Black", "5" "6" "1" "1" };
+        public readonly static String[] Laetitia = new string[7] { "Laetitia", "HE", "Black", "5", "6", "1", "1" };
 
         //public readonly static String[] SolemnVow = new string[7] { //2 GUUUUUUUUUUNS :D };
 
-        public readonly static String[] MagicBullet = new string[7] { "Magic Bullet", "WAW", "Black", "20" "22" "1" "0.5" };
+        public readonly static String[] MagicBullet = new string[7] { "Magic Bullet", "WAW", "Black", "20", "22", "1", "0.5" };
 
-        public readonly static String[] Gaze = new string[7] { "Gaze", "HE", "Red", "1" "4" "10" "0.33" };
+        public readonly static String[] Gaze = new string[7] { "Gaze", "HE", "Red", "1", "4", "10", "0.33" };
 
-        public readonly static String[] Pleasure = new string[7] { "Pleasure", "HE", "Black", "1" "4" "1" "1.75" };
+        public readonly static String[] Pleasure = new string[7] { "Pleasure", "HE", "Black", "1", "4", "1", "1.75" };
 
-        public readonly static String[] Harvest = new string[7] { "Harvest", "HE", "Black", "6" "12" "1" "0.67" };
+        public readonly static String[] Harvest = new string[7] { "Harvest", "HE", "Black", "6", "12", "1", "0.67" };
 
         //WAW
-        public readonly static String[] Justitia = new string[7] { "Heaven", "ALEPH", "Pale", "2" "4" "5" "0.5" };
+        public readonly static String[] Justitia = new string[7] { "Heaven", "ALEPH", "Pale", "2", "4", "5", "0.5" };
 
-        public readonly static String[] GreenStem = new string[7] { "Green Stem", "WAW", "Black", "8" "16" "1" "0.67" };
+        public readonly static String[] GreenStem = new string[7] { "Green Stem", "WAW", "Black", "8", "16", "1", "0.67" };
         
-        public readonly static String[] Lamp = new string[7] { "Lamp", "WAW", "Black", "22" "28" "1" "0.37" };
+        public readonly static String[] Lamp = new string[7] { "Lamp", "WAW", "Black", "22", "28", "1", "0.37" };
 
-        public readonly static String[] BlueScar = new string[7] { "Blue Scar", "WAW", "Red", "12" "17" "1" "0.5" };
+        public readonly static String[] BlueScar = new string[7] { "Blue Scar", "WAW", "Red", "12", "17", "1", "0.5" };
 
-        public readonly static String[] CrimsonScar = new string[7] { "Crimson Scar", "WAW", "Red", "11" "13" "1" "0.75" };
+        public readonly static String[] CrimsonScar = new string[7] { "Crimson Scar", "WAW", "Red", "11", "13", "1", "0.75" };
 
-        public readonly static String[] BlackSwan = new string[7] { "Black Swam", "WAW", "Black", "5" "7" "1" "0.5" };
+        public readonly static String[] BlackSwan = new string[7] { "Black Swam", "WAW", "Black", "5", "7", "1", "0.5" };
 
-        public readonly static String[] GoldRush = new string[7] { "Gold Rush", "ALEPH", "Red", "4" "5" "3" "1" };
+        public readonly static String[] GoldRush = new string[7] { "Gold Rush", "ALEPH", "Red", "4", "5", "3", "1" };
 
-        public readonly static String[] Ecstasy = new string[7] { "Ecstasy", "WAW", "White", "2" "4" "1" "1.5" };
+        public readonly static String[] Ecstasy = new string[7] { "Ecstasy", "WAW", "White", "2", "4", "1", "1.5" };
 
-        public readonly static String[] Diffraction = new string[7] { "Diffraction", "WAW", "White", "15" "17" "1" "0.5" };
+        public readonly static String[] Diffraction = new string[7] { "Diffraction", "WAW", "White", "15", "17", "1", "0.5" };
 
-        public readonly static String[] Amita = new string[7] { "Amita", "WAW", "Red", "3" "4" "3" "0.67" };
+        public readonly static String[] Amita = new string[7] { "Amita", "WAW", "Red", "3", "4", "3", "0.67" };
 
-        public readonly static String[] ASwordSharpenedByTears = new string[7] { "A Sword Sharpened By Tears", "WAW", "White", "9" "12" "1" "1" };
+        public readonly static String[] ASwordSharpenedByTears = new string[7] { "A Sword Sharpened By Tears", "WAW", "White", "9", "12", "1", "1" };
 
-        public readonly static String[] Heaven = new string[7] { "Heaven", "WAW", "Red", "8" "16" "1" "0.67" };
+        public readonly static String[] Heaven = new string[7] { "Heaven", "WAW", "Red", "8", "16", "1", "0.67" };
 
-        public readonly static String[] Hornet = new string[7] { "Hornet", "WAW", "Red", "7" "8" "1" "1" };
+        public readonly static String[] Hornet = new string[7] { "Hornet", "WAW", "Red", "7", "8", "1", "1" };
 
-        public readonly static String[] Hypocrisy = new string[7] { "Hypocrisy", "WAW", "Red", "10" "20" "1" "0.75" };
+        public readonly static String[] Hypocrisy = new string[7] { "Hypocrisy", "WAW", "Red", "10", "20", "1", "0.75" };
 
-        public readonly static String[] Reverberation = new string[7] { "Reverberation", "WAW", "White", "10" "20" "1" "0.75" };
+        public readonly static String[] Reverberation = new string[7] { "Reverberation", "WAW", "White", "10", "20", "1", "0.75" };
 
         //public readonly static String[] InTheNameOfLoveAndHate = new string[7] //{ //Her voice, it's so soothing :) };
 
-        public readonly static String[] ShedSkin = new string[7] { "ShedSkin", "WAW", "Red", "35" "50" "1" "0.2" };
+        public readonly static String[] ShedSkin = new string[7] { "ShedSkin", "WAW", "Red", "35", "50", "1", "0.2" };
 
-        public readonly static String[] Discord = new string[7] { "Discord", "WAW", "Black", "8" "13" "1" "0.67" };
+        public readonly static String[] Discord = new string[7] { "Discord", "WAW", "Black", "8", "13", "1", "0.67" };
 
-        public readonly static String[] FeatherOfHonor = new string[7] { "Feather Of Honor", "WAW", "White", "4" "5" "1" "2" };
+        public readonly static String[] FeatherOfHonor = new string[7] { "Feather Of Honor", "WAW", "White", "4", "5", "1", "2" };
 
-        public readonly static String[] Spore = new string[7] { "Spore", "WAW", "White", "8" "16" "1" "0.67" };
+        public readonly static String[] Spore = new string[7] { "Spore", "WAW", "White", "8", "16", "1", "0.67" };
 
-        public readonly static String[] Moonlight = new string[7] { "Moonlight", "WAW", "White", "8" "10" "1" "0.5" };
+        public readonly static String[] Moonlight = new string[7] { "Moonlight", "WAW", "White", "8", "10", "1", "0.5" };
 
         //ALEPH
-        public readonly static String[] Mimicry = new string[7] { "Mimicry", "ALEPH", "Red", "10" "14" "1" "1" };
+        public readonly static String[] Mimicry = new string[7] { "Mimicry", "ALEPH", "Red", "10", "14", "1", "1" };
 
-        public readonly static String[] SoundOfAStar = new string[7] { "Sound Of A Star", "ALEPH", "White", "8" "12" "3" "0.2" };
+        public readonly static String[] SoundOfAStar = new string[7] { "Sound Of A Star", "ALEPH", "White", "8", "12", "3", "0.2" };
 
-        public readonly static String[] CENSORED = new string[7] { "CENSORED", "ALEPH", "Black", "15" "30" "2" "0.33" };
+        public readonly static String[] CENSORED = new string[7] { "CENSORED", "ALEPH", "Black", "15", "30", "2", "0.33" };
 
-        public readonly static String[] TheSmile = new string[7] { "The Smile", "ALEPH", "Black", "12" "18" "1" "1" };
+        public readonly static String[] TheSmile = new string[7] { "The Smile", "ALEPH", "Black", "12", "18", "1", "1" };
 
-        public readonly static String[] DaCapo = new string[7] { "Da Capo", "ALEPH", "White", "5" "6" "4" "1" };
+        public readonly static String[] DaCapo = new string[7] { "Da Capo", "ALEPH", "White", "5", "6", "4", "1" };
 
-        public readonly static String[] Adoration = new string[7] { "Adoration", "ALEPH", "Black", "22" "44" "1" "0.33" }; //On hit, "additional black damage is dealt over 5 seconds", how much is not specified
+        public readonly static String[] Adoration = new string[7] { "Adoration", "ALEPH", "Black", "22", "44", "1", "0.33" }; //On hit, "additional black damage is dealt over 5 seconds", how much is not specified
 
         //TWILIGHT GOES HERE WAS SKIPPED BC ITS FUCKING BROKEN AND WEIRD
 
-        public readonly static String[] ParadiseLost = new string[7] { "Paradise Lost", "ALEPH", "Pale", "22" "28" "1" "0.5" };
+        public readonly static String[] ParadiseLost = new string[7] { "Paradise Lost", "ALEPH", "Pale", "22", "28", "1", "0.5" };
 
 }
 }

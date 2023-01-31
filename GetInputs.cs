@@ -18,7 +18,7 @@ namespace UniversalLobCorpTTK
         public static int Hits = 0;
         public static int AttackingLevel = 0;
         public static int DefendingLevel = 0;
-        
+        /*
         public static Array GetWeapon(string WeaponName)
         {
              string Weapon = WeaponName;
@@ -58,7 +58,7 @@ namespace UniversalLobCorpTTK
                 }
 
         }
-        
+        *///array function
         public static void AssignValues()
         {
             TargetHealth = GetTargetHealth();
