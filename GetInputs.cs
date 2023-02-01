@@ -10,33 +10,231 @@ namespace UniversalLobCorpTTK
     public static class GetInputs
     {
         public static int TargetHealth = 0;
+        public static int DefendingLevel = 0;
         public static int Justice = 0;
+        public static string WeaponName = "";
+        public static string WeaponClass = "";
+        public static int AttackingLevel = 0;
+        public static string DamageType = "";
         public static double DamageMult = 0;
         public static double SwingSpeed = 0;
         public static int MinDam = 0;
         public static int MaxDam = 0;
         public static int Hits = 0;
-        public static int AttackingLevel = 0;
-        public static int DefendingLevel = 0;
-        public static string[] CurrentWeapon = new string[7];
         
-        //public static Array GetWeapon(string WeaponName)
-        //{
-        //     switch(WeaponName)
-        //    {
-        //        case "Penitence":
-        //            break;
-        //    }
+        public static void SetArray(string SelectedWeapon)
+        {
+            switch (SelectedWeapon)
+            {
+                case "Penitence":
+                    SetWeapon(WeaponArrays.Penitence);
+                    break;
+                case "Soda":
+                    SetWeapon();
+                    break;
+                case "Tough":
+                    SetWeapon();
+                    break;
+                case "Wingbeat":
+                    SetWeapon();
+                    break;
+                case "Pink":
+                    SetWeapon();
+                    break;
+                case "Training Standard EGO":
+                    SetWeapon();
+                    break;
+                case "Fourth Match Flame":
+                    SetWeapon();
+                    break;
+                case "Loneliness":
+                    SetWeapon();
+                    break;
+                case "Screaming Wedge":
+                    SetWeapon();
+                    break;
+                case "Red Eyes":
+                    SetWeapon();
+                    break;
+                case "Horn":
+                    SetWeapon();
+                    break;
+                case "Wrist Cutter":
+                    SetWeapon();
+                    break;
+                case "Regret":
+                    SetWeapon();
+                    break;
+                case "Beak":
+                    SetWeapon();
+                    break;
+                case "Somewhere Spear":
+                    SetWeapon();
+                    break;
+                case "Life for the Daredevil":
+                    SetWeapon();
+                    break;
+                case "Lantern":
+                    SetWeapon();
+                    break;
+                case "Today's Expression":
+                    SetWeapon();
+                    break;
+                case "Rapturous Dream":
+                    SetWeapon();
+                    break;
+                case "Cherry Blossom":
+                    SetWeapon();
+                    break;
+                case "CUTE!!!":
+                    SetWeapon();
+                    break;
+                case "Bear Paw":
+                    SetWeapon();
+                    break;
+                case "Bloody Desire":
+                    SetWeapon();
+                    break;
+                case "Crier":
+                    SetWeapon();
+                    break;
+                case "Harmony":
+                    SetWeapon();
+                    break;
+                case "Logging":
+                    SetWeapon();
+                    break;
+                case "Frost Shard":
+                    SetWeapon();
+                    break;
+                case "Grinder Mk4":
+                    SetWeapon();
+                    break;
+                case "Christmas":
+                    SetWeapon();
+                    break;
+                case "Galaxy":
+                    SetWeapon();
+                    break;
+                case "Laetitia":
+                    SetWeapon();
+                    break;
+                case "Magic Bullet":
+                    SetWeapon();
+                    break;
+                case "Gaze":
+                    SetWeapon();
+                    break;
+                case "Pleasure":
+                    SetWeapon();
+                    break;
+                case "Harvest":
+                    SetWeapon();
+                    break;
+                case "Justitia":
+                    SetWeapon();
+                    break;
+                case "Green Stem":
+                    SetWeapon();
+                    break;
+                case "Lamp":
+                    SetWeapon();
+                    break;
+                case "Blue Scar":
+                    SetWeapon();
+                    break;
+                case "Crimson Scar":
+                    SetWeapon();
+                    break;
+                case "Black Swam":
+                    SetWeapon();
+                    break;
+                case "Gold Rush":
+                    SetWeapon();
+                    break;
+                case "Ecstasy":
+                    SetWeapon();
+                    break;
+                case "Diffraction":
+                    SetWeapon();
+                    break;
+                case "Amita":
+                    SetWeapon();
+                    break;
+                case "A Sword Sharpened By Tears":
+                    SetWeapon();
+                    break;
+                case "Heaven":
+                    SetWeapon();
+                    break;
+                case "Hornet":
+                    SetWeapon();
+                    break;
+                case "Hypocrisy":
+                    SetWeapon();
+                    break;
+                case "Reverberation":
+                    SetWeapon();
+                    break;
+                case "ShedSkin":
+                    SetWeapon();
+                    break;
+                case "Discord":
+                    SetWeapon();
+                    break;
+                case "Feather Of Honor":
+                    SetWeapon();
+                    break;
+                case "Spore":
+                    SetWeapon();
+                    break;
+                case "Moonlight":
+                    SetWeapon();
+                    break;
+                case "Mimicry":
+                    SetWeapon();
+                    break;
+                case "Sound Of A Star":
+                    SetWeapon();
+                    break;
+                case "CENSORED":
+                    SetWeapon();
+                    break;
+                case "The Smile":
+                    SetWeapon();
+                    break;
+                case "Da Capo":
+                    SetWeapon();
+                    break;
+                case "Adoration":
+                    SetWeapon();
+                    break;
+                case "Paradise Lost":
+                    SetWeapon();
+                    break;
+                default:
+                    Console.WriteLine("Error: Weapon Not Recognized");
+                    break;
 
-        //}
+                    }
+            }
 
-        //public static string[] SetWeaponArray(string[] weapon)
-        //{
+        public static void SetWeapon(string[] inputArray)
+        {
+            
+            WeaponName= inputArray[0];
+            WeaponClass = inputArray[1];
+            DamageType = inputArray[2];
+            MinDam = Convert.ToInt32(inputArray[3]);
+            MaxDam = Convert.ToInt32(inputArray[4]);
+            Hits = Convert.ToInt32(inputArray[5]);
+            SwingSpeed = Convert.ToDouble(inputArray[5]);
+            Console.WriteLine($"The weapon you have inputted is {WeaponName} of the {WeaponClass} class.");
+            Console.WriteLine($"It does the {DamageType} damage type, dealing between {MinDam} and {MaxDam} per hit, and deals damage {Hits} times per hit.");
+                        
+        }
 
-        //}
-        
-        
-        
+
         public static void AssignValues()
         {
             TargetHealth = GetTargetHealth();

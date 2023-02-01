@@ -9,7 +9,7 @@ namespace UniversalLobCorpTTK
     public static class WeaponArrays
     {
         
-        //Order goes "Name" "Weapon Class(Zayin, Waw, etc)" "Damage Type" "Min Damage" "Max Damage" "Hits per Impact" "Attack/Sec"
+        //Order goes "Name" "Weapon Class" "Damage Type" "Min Damage" "Max Damage" "Hits per Impact" "Attack/Sec"
         //organized by Abno class, not weapon
         
         //ZAYIN
@@ -88,7 +88,7 @@ namespace UniversalLobCorpTTK
         public readonly static String[] Harvest = new string[7] { "Harvest", "HE", "Black", "6", "12", "1", "0.67" };
 
         //WAW
-        public readonly static String[] Justitia = new string[7] { "Heaven", "ALEPH", "Pale", "2", "4", "5", "0.5" };
+        public readonly static String[] Justitia = new string[7] { "Justitia", "ALEPH", "Pale", "2", "4", "5", "0.5" };
 
         public readonly static String[] GreenStem = new string[7] { "Green Stem", "WAW", "Black", "8", "16", "1", "0.67" };
         
