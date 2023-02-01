@@ -30,187 +30,187 @@ namespace UniversalLobCorpTTK
                     SetWeapon(WeaponArrays.Penitence);
                     break;
                 case "Soda":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Soda);
                     break;
                 case "Tough":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Tough);
                     break;
                 case "Wingbeat":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Wingbeat);
                     break;
                 case "Pink":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Pink);
                     break;
                 case "Training Standard EGO":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.TrainingStandardEGO);
                     break;
                 case "Fourth Match Flame":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.FourthMatchFlame);
                     break;
                 case "Loneliness":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Loneliness);
                     break;
                 case "Screaming Wedge":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.ScreamingWedge);
                     break;
                 case "Red Eyes":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.RedEyes);
                     break;
                 case "Horn":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Horn);
                     break;
                 case "Wrist Cutter":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.WristCutter);
                     break;
                 case "Regret":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Regret);
                     break;
                 case "Beak":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Beak);
                     break;
                 case "Somewhere Spear":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.SomewhereSpear);
                     break;
                 case "Life for the Daredevil":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.LifefortheDaredevil);
                     break;
                 case "Lantern":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Lantern);
                     break;
                 case "Today's Expression":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.TodaysExpression);
                     break;
                 case "Rapturous Dream":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.RapturousDream);
                     break;
                 case "Cherry Blossom":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.CherryBlossom);
                     break;
                 case "CUTE!!!":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.CUTE);
                     break;
                 case "Bear Paw":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.BearPaw);
                     break;
                 case "Bloody Desire":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.BloodyDesire);
                     break;
                 case "Crier":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Crier);
                     break;
                 case "Harmony":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Harmony);
                     break;
                 case "Logging":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Logging);
                     break;
                 case "Frost Shard":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.FrostShard);
                     break;
                 case "Grinder Mk4":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.GrinderMk4);
                     break;
                 case "Christmas":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Christmas);
                     break;
                 case "Galaxy":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Galaxy);
                     break;
                 case "Laetitia":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Laetitia);
                     break;
                 case "Magic Bullet":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.MagicBullet);
                     break;
                 case "Gaze":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Gaze);
                     break;
                 case "Pleasure":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Pleasure);
                     break;
                 case "Harvest":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Harvest);
                     break;
                 case "Justitia":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Justitia);
                     break;
                 case "Green Stem":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.GreenStem);
                     break;
                 case "Lamp":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Lamp);
                     break;
                 case "Blue Scar":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.BlueScar);
                     break;
                 case "Crimson Scar":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.CrimsonScar);
                     break;
-                case "Black Swam":
-                    SetWeapon();
+                case "Black Swan":
+                    SetWeapon(WeaponArrays.BlackSwan);
                     break;
                 case "Gold Rush":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.GoldRush);
                     break;
                 case "Ecstasy":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Ecstasy);
                     break;
                 case "Diffraction":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Diffraction);
                     break;
                 case "Amita":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Amita);
                     break;
                 case "A Sword Sharpened By Tears":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.ASwordSharpenedByTears);
                     break;
                 case "Heaven":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Heaven);
                     break;
                 case "Hornet":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Hornet);
                     break;
                 case "Hypocrisy":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Hypocrisy);
                     break;
                 case "Reverberation":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Reverberation);
                     break;
                 case "ShedSkin":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.ShedSkin);
                     break;
                 case "Discord":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Discord);
                     break;
                 case "Feather Of Honor":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.FeatherOfHonor);
                     break;
                 case "Spore":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Spore);
                     break;
                 case "Moonlight":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Moonlight);
                     break;
                 case "Mimicry":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Mimicry);
                     break;
                 case "Sound Of A Star":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.SoundOfAStar);
                     break;
                 case "CENSORED":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.CENSORED);
                     break;
                 case "The Smile":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.TheSmile);
                     break;
                 case "Da Capo":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.DaCapo);
                     break;
                 case "Adoration":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.Adoration);
                     break;
                 case "Paradise Lost":
-                    SetWeapon();
+                    SetWeapon(WeaponArrays.ParadiseLost);
                     break;
                 default:
                     Console.WriteLine("Error: Weapon Not Recognized");

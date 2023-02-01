@@ -98,7 +98,7 @@ namespace UniversalLobCorpTTK
 
         public readonly static String[] CrimsonScar = new string[7] { "Crimson Scar", "WAW", "Red", "11", "13", "1", "0.75" };
 
-        public readonly static String[] BlackSwan = new string[7] { "Black Swam", "WAW", "Black", "5", "7", "1", "0.5" };
+        public readonly static String[] BlackSwan = new string[7] { "Black Swan", "WAW", "Black", "5", "7", "1", "0.5" };
 
         public readonly static String[] GoldRush = new string[7] { "Gold Rush", "ALEPH", "Red", "4", "5", "3", "1" };
 
