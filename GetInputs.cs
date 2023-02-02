@@ -16,14 +16,24 @@ namespace UniversalLobCorpTTK
         public static string WeaponClass = "";
         public static int AttackingLevel = 0;
         public static string DamageType = "";
+
+        
+        public static double RedMult = 0;
+        public static double WhiteMult = 0;
+        public static double BlackMult = 0;
+        public static double PaleMult = 0;
         public static double DamageMult = 0;
+
         public static double SwingSpeed = 0;
         public static int MinDam = 0;
         public static int MaxDam = 0;
         public static int Hits = 0;
-        
-        public static void SetArray(string SelectedWeapon)
+
+        public static void SetArray()
         {
+            Console.WriteLine("Input the Weapon of the Employee");
+            string SelectedWeapon = GenericFunctions.getName();
+            
             switch (SelectedWeapon)
             {
                 case "Penitence":
@@ -213,16 +223,17 @@ namespace UniversalLobCorpTTK
                     SetWeapon(WeaponArrays.ParadiseLost);
                     break;
                 default:
-                    Console.WriteLine("Error: Weapon Not Recognized");
+                    Console.WriteLine("Error: Weapon Not Recognized. Try Again:");
+                    SetArray();
                     break;
 
-                    }
             }
+        }
 
         public static void SetWeapon(string[] inputArray)
         {
-            
-            WeaponName= inputArray[0];
+
+            WeaponName = inputArray[0];
             WeaponClass = inputArray[1];
             DamageType = inputArray[2];
             MinDam = Convert.ToInt32(inputArray[3]);
@@ -231,27 +242,22 @@ namespace UniversalLobCorpTTK
             SwingSpeed = Convert.ToDouble(inputArray[5]);
             Console.WriteLine($"The weapon you have inputted is {WeaponName} of the {WeaponClass} class.");
             Console.WriteLine($"It does the {DamageType} damage type, dealing between {MinDam} and {MaxDam} per hit, and deals damage {Hits} times per hit.");
-                        
-        }
-
-
-        public static void AssignValues()
-        {
-            TargetHealth = GetTargetHealth();
             Justice = GetJustice();
-            DamageMult = GetDamageMult();
-            SwingSpeed = GetSwingSpeed();
-            MinDam = GetMinDam();
-            MaxDam = GetMaxDam();
-            Hits = GetHits();            
+
         }
-        
-        public static int GetTargetHealth()
+
+
+        public static void AssignAbnoValues()
         {
             Console.WriteLine("Input the Target Health Stat:");
+
             string HealthInput = GenericFunctions.getName();
-            int Target = Convert.ToInt32(HealthInput);
-            return Target;
+            TargetHealth = Convert.ToInt32(HealthInput);
+
+            GetDamageMult();
+
+            SetDamageType();
+            
         }
 
         public static int GetJustice()
@@ -261,45 +267,54 @@ namespace UniversalLobCorpTTK
             int Justice = Convert.ToInt32(JusticeInput);
             return Justice;
         }
-        public static double GetDamageMult()
+        public static void GetDamageMult()
         {
-            Console.WriteLine("Input the Damage Multiplier Stat:");
-            string DamageMultInput = GenericFunctions.getName();
-            double DamageMultiple = Convert.ToDouble(DamageMultInput);
-            return DamageMultiple;
+            string DamageMultInput = "";
+            double DamageMultiple = 0;
+
+
+            Console.WriteLine("Input the Red Damage Multiplier Stat:");
+            DamageMultInput = GenericFunctions.getName();
+            DamageMultiple = Convert.ToDouble(DamageMultInput);
+            RedMult= Convert.ToDouble(DamageMultiple);
+
+            Console.WriteLine("Input the White Damage Multiplier Stat:");
+            DamageMultInput = GenericFunctions.getName();
+            DamageMultiple = Convert.ToDouble(DamageMultInput);
+            WhiteMult = Convert.ToDouble(DamageMultiple);
+
+            Console.WriteLine("Input the Black Damage Multiplier Stat:");
+            DamageMultInput = GenericFunctions.getName();
+            DamageMultiple = Convert.ToDouble(DamageMultInput);
+            BlackMult = Convert.ToDouble(DamageMultiple);
+
+            Console.WriteLine("Input the Pale Damage Multiplier Stat:");
+            DamageMultInput = GenericFunctions.getName();
+            DamageMultiple = Convert.ToDouble(DamageMultInput);
+            PaleMult = Convert.ToDouble(DamageMultiple);
         }
 
-        public static double GetSwingSpeed()
+        public static void SetDamageType()
         {
-            Console.WriteLine("Input the Default Weapon Swing Speed:");
-            Console.WriteLine("Find the information here:\nhttps://docs.google.com/spreadsheets/d/1FOWhLx4k-9IUguEBR_2qyemry2hi4_HMYS0opBAUnak/htmlview");
-            string SwingSpeedInput = GenericFunctions.getName();
-            double SpeedMultiple = Convert.ToDouble(SwingSpeedInput);
-            return SpeedMultiple;
-        }
-
-        public static int GetMinDam()
-        {
-            Console.WriteLine("Input the Minimum Damage Roll:");
-            string MinInput = GenericFunctions.getName();
-            int Min = Convert.ToInt32(MinInput);
-            return Min;
-        }
-
-        public static int GetMaxDam()
-        {
-            Console.WriteLine("Input the Minimum Damage Roll (If no variance in roll, input same value as minimum:");
-            string MaxInput = GenericFunctions.getName();
-            int Max = Convert.ToInt32(MaxInput);
-            return Max;
-        }
-
-        public static int GetHits()
-        {
-            Console.WriteLine("Input the Amount of Times Damage is Calculated Per Hit");
-            string HitInput = GenericFunctions.getName();
-            int Hits = Convert.ToInt32(HitInput);
-            return Hits;
+            switch(DamageType)
+            {
+                case "Red":
+                    DamageMult = RedMult; 
+                    break;
+                case "White":
+                    DamageMult = WhiteMult;
+                    break;
+                case "Black":
+                    DamageMult = BlackMult;
+                    break;
+                case "Pale":
+                    DamageMult = PaleMult;
+                    break;
+                default:
+                    Console.WriteLine("Damage Type Could not be Identified.");
+                    GenericFunctions.pauseForInput();
+                    break;
+            }
         }
     }
 }
