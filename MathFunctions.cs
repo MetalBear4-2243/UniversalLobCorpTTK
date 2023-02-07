@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,15 +37,27 @@ namespace UniversalLobCorpTTK
             while (Health > 0)
             {
                 
-                Health = Health - DPS;
+                Health -= DPS;
 
                 time++;
             }
             return time;
         }
 
-        public static double Average(int TargetHealth, int Justice, double DamageMult, double SwingSpeed, int MinDamage, int MaxDamage, int Hits, int AttackingLevel, int DefendingLevel)
+        public static double Average()
         {
+
+            int TargetHealth = GetInputs.TargetHealth;
+            int Justice = GetInputs.Justice;
+            double DamageMult = GetInputs.DamageMult;
+            double SwingSpeed = GetInputs.SwingSpeed;
+            int MinDamage = GetInputs.MinDamage;
+            int MaxDamage = GetInputs.MaxDamage;
+            int Hits = GetInputs.Hits;
+            int AttackingLevel = GetInputs.AttackingLevel;
+            int DefendingLevel = GetInputs.DefendingLevel;
+            
+            
             int i = 0;
             int totalTTK = 0;
             double LevelMult = GetLevelDiffMult(AttackingLevel, DefendingLevel);
@@ -110,7 +123,7 @@ namespace UniversalLobCorpTTK
                 Random r = new Random();
                 double rInt = r.Next(MinDamage, MaxDamage);
                 double finalRandom = Math.Round(rInt);
-                damage = damage + finalRandom;
+                damage += finalRandom;
 
                 i--;
 

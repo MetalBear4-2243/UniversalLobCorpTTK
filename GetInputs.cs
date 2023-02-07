@@ -10,11 +10,11 @@ namespace UniversalLobCorpTTK
     public static class GetInputs
     {
         public static int TargetHealth = 0;
-        public static int DefendingLevel = 0;
         public static int Justice = 0;
         public static string WeaponName = "";
         public static string WeaponClass = "";
         public static int AttackingLevel = 0;
+        public static int DefendingLevel = 0;
         public static string DamageType = "";
 
         
@@ -25,14 +25,14 @@ namespace UniversalLobCorpTTK
         public static double DamageMult = 0;
 
         public static double SwingSpeed = 0;
-        public static int MinDam = 0;
-        public static int MaxDam = 0;
+        public static int MinDamage = 0;
+        public static int MaxDamage = 0;
         public static int Hits = 0;
 
         public static void SetArray()
         {
             Console.WriteLine("Input the Weapon of the Employee");
-            string SelectedWeapon = GenericFunctions.getName();
+            string SelectedWeapon = GenericFunctions.GetName();
             
             switch (SelectedWeapon)
             {
@@ -236,12 +236,12 @@ namespace UniversalLobCorpTTK
             WeaponName = inputArray[0];
             WeaponClass = inputArray[1];
             DamageType = inputArray[2];
-            MinDam = Convert.ToInt32(inputArray[3]);
-            MaxDam = Convert.ToInt32(inputArray[4]);
+            MinDamage = Convert.ToInt32(inputArray[3]);
+            MaxDamage = Convert.ToInt32(inputArray[4]);
             Hits = Convert.ToInt32(inputArray[5]);
             SwingSpeed = Convert.ToDouble(inputArray[5]);
             Console.WriteLine($"The weapon you have inputted is {WeaponName} of the {WeaponClass} class.");
-            Console.WriteLine($"It does the {DamageType} damage type, dealing between {MinDam} and {MaxDam} per hit, and deals damage {Hits} times per hit.");
+            Console.WriteLine($"It does the {DamageType} damage type, dealing between {MinDamage} and {MaxDamage} per hit, and deals damage {Hits} times per hit.");
             Justice = GetJustice();
 
         }
@@ -251,7 +251,7 @@ namespace UniversalLobCorpTTK
         {
             Console.WriteLine("Input the Target Health Stat:");
 
-            string HealthInput = GenericFunctions.getName();
+            string HealthInput = GenericFunctions.GetName();
             TargetHealth = Convert.ToInt32(HealthInput);
 
             GetDamageMult();
@@ -263,7 +263,7 @@ namespace UniversalLobCorpTTK
         public static int GetJustice()
         {
             Console.WriteLine("Input the Employee Justice Stat:");
-            string JusticeInput = GenericFunctions.getName();
+            string JusticeInput = GenericFunctions.GetName();
             int Justice = Convert.ToInt32(JusticeInput);
             return Justice;
         }
@@ -274,22 +274,22 @@ namespace UniversalLobCorpTTK
 
 
             Console.WriteLine("Input the Red Damage Multiplier Stat:");
-            DamageMultInput = GenericFunctions.getName();
+            DamageMultInput = GenericFunctions.GetName();
             DamageMultiple = Convert.ToDouble(DamageMultInput);
             RedMult= Convert.ToDouble(DamageMultiple);
 
             Console.WriteLine("Input the White Damage Multiplier Stat:");
-            DamageMultInput = GenericFunctions.getName();
+            DamageMultInput = GenericFunctions.GetName();
             DamageMultiple = Convert.ToDouble(DamageMultInput);
             WhiteMult = Convert.ToDouble(DamageMultiple);
 
             Console.WriteLine("Input the Black Damage Multiplier Stat:");
-            DamageMultInput = GenericFunctions.getName();
+            DamageMultInput = GenericFunctions.GetName();
             DamageMultiple = Convert.ToDouble(DamageMultInput);
             BlackMult = Convert.ToDouble(DamageMultiple);
 
             Console.WriteLine("Input the Pale Damage Multiplier Stat:");
-            DamageMultInput = GenericFunctions.getName();
+            DamageMultInput = GenericFunctions.GetName();
             DamageMultiple = Convert.ToDouble(DamageMultInput);
             PaleMult = Convert.ToDouble(DamageMultiple);
         }
@@ -312,7 +312,7 @@ namespace UniversalLobCorpTTK
                     break;
                 default:
                     Console.WriteLine("Damage Type Could not be Identified.");
-                    GenericFunctions.pauseForInput();
+                    GenericFunctions.PauseForInput();
                     break;
             }
         }

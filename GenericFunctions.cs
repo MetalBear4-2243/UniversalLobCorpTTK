@@ -8,27 +8,21 @@ namespace UniversalLobCorpTTK
 {
     public static class GenericFunctions
     {
-        public static string getName()
+        public static string GetName()
         {
             //possible error CS8600 V
-            string name = "";
-            if (name == "")
-            {
-                name = Console.ReadLine();
-            }
-            if (name == "")
-            {
-                name = getName();
-            }
+            string? name = Console.ReadLine();
+
+            name ??= GetName();
             //possible error CS8603    V
             return name;
         }
 
-        public static void pauseForInput()
+        public static void PauseForInput()
         {
             Console.Write("Press Enter to Continue");
             Console.Out.Flush();
-            var tempName = Console.ReadLine();
+            _ = Console.ReadLine();
         }
     }
 }

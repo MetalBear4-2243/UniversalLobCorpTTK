@@ -18,9 +18,10 @@ namespace UniversalLobCorpTTK
             GetInputs.AssignAbnoValues();
 
 
-            double average = MathFunctions.Average(GetInputs.TargetHealth, GetInputs.Justice, GetInputs.DamageMult, GetInputs.SwingSpeed, GetInputs.MinDam, GetInputs.MaxDam, GetInputs.Hits, GetInputs.AttackingLevel, GetInputs.DefendingLevel);
+
+            double average = MathFunctions.Average();
             Console.WriteLine($"Your average Time to Kill is {average} seconds.");
-            GenericFunctions.pauseForInput();
+            GenericFunctions.PauseForInput();
         }
     }
 }
