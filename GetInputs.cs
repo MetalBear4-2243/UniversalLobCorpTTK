@@ -269,8 +269,8 @@ namespace UniversalLobCorpTTK
         }
         public static void GetDamageMult()
         {
-            string DamageMultInput = "";
-            double DamageMultiple = 0;
+            string DamageMultInput;
+            double DamageMultiple;
 
 
             Console.WriteLine("Input the Red Damage Multiplier Stat:");
