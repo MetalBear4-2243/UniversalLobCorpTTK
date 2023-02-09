@@ -54,13 +54,13 @@ namespace UniversalLobCorpTTK
             int MinDamage = GetInputs.MinDamage;
             int MaxDamage = GetInputs.MaxDamage;
             int Hits = GetInputs.Hits;
-            int AttackingLevel = GetInputs.AttackingLevel;
-            int DefendingLevel = GetInputs.DefendingLevel;
-            
-            
+            double LevelMult = GetInputs.LevelMult;
+            Console.WriteLine($"Health, Justice, DamageMult, SwingSpeed, MinDam, MaxDam, Hits, LevelMult{TargetHealth} {Justice} {DamageMult} {SwingSpeed} {MinDamage} {MaxDamage} {Hits} {LevelMult}");
+
+
             int i = 0;
             int totalTTK = 0;
-            double LevelMult = GetLevelDiffMult(AttackingLevel, DefendingLevel);
+            Console.WriteLine($"{LevelMult}");
             while (i < 3)
             {
                 double DPS = CalculateDPS(TargetHealth, Justice, DamageMult, SwingSpeed, MinDamage, MaxDamage, Hits, LevelMult);
@@ -74,7 +74,8 @@ namespace UniversalLobCorpTTK
 
         public static double GetLevelDiffMult(int AttackingLevel, int DefendingLevel) 
         {
-            int EndLevel = AttackingLevel - DefendingLevel;
+            int EndLevel =  AttackingLevel - DefendingLevel;
+            Console.WriteLine($"End Level: {EndLevel}");
             double LevelMult = 0;
             
             switch (EndLevel)
@@ -110,7 +111,7 @@ namespace UniversalLobCorpTTK
                     LevelMult = 1;
                     break;
             }
-
+            Console.WriteLine($"LevelMult{ LevelMult}");
             return LevelMult;
         }
 

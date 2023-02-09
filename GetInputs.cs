@@ -14,15 +14,17 @@ namespace UniversalLobCorpTTK
         public static string WeaponName = "";
         public static string WeaponClass = "";
         public static int AttackingLevel = 0;
+        public static string AbnoClass = "";
         public static int DefendingLevel = 0;
         public static string DamageType = "";
-
+        public static double LevelMult;
         
         public static double RedMult = 0;
         public static double WhiteMult = 0;
         public static double BlackMult = 0;
         public static double PaleMult = 0;
         public static double DamageMult = 0;
+        
 
         public static double SwingSpeed = 0;
         public static int MinDamage = 0;
@@ -239,7 +241,7 @@ namespace UniversalLobCorpTTK
             MinDamage = Convert.ToInt32(inputArray[3]);
             MaxDamage = Convert.ToInt32(inputArray[4]);
             Hits = Convert.ToInt32(inputArray[5]);
-            SwingSpeed = Convert.ToDouble(inputArray[5]);
+            SwingSpeed = Convert.ToDouble(inputArray[6]);
             Console.WriteLine($"The weapon you have inputted is {WeaponName} of the {WeaponClass} class.");
             Console.WriteLine($"It does the {DamageType} damage type, dealing between {MinDamage} and {MaxDamage} per hit, and deals damage {Hits} times per hit.");
             Justice = GetJustice();
@@ -258,6 +260,7 @@ namespace UniversalLobCorpTTK
 
             SetDamageType();
             
+
         }
 
         public static int GetJustice()
@@ -292,6 +295,13 @@ namespace UniversalLobCorpTTK
             DamageMultInput = GenericFunctions.GetName();
             DamageMultiple = Convert.ToDouble(DamageMultInput);
             PaleMult = Convert.ToDouble(DamageMultiple);
+
+            Console.WriteLine("Type the Abno's class (All Caps):");
+            AbnoClass = GenericFunctions.GetName();
+
+
+            Console.WriteLine($"These are the damage mults:{RedMult} {WhiteMult} {BlackMult} {PaleMult}");
+            GenericFunctions.PauseForInput();
         }
 
         public static void SetDamageType()
@@ -315,6 +325,31 @@ namespace UniversalLobCorpTTK
                     GenericFunctions.PauseForInput();
                     break;
             }
+            switch (AbnoClass)
+            {
+                case "ZAYIN":
+                    DefendingLevel = 1;
+                    break;
+                case "TETH":
+                    DefendingLevel = 2;
+                    break;
+                case "HE":
+                    DefendingLevel = 3;
+                    break;
+                case "WAW":
+                    DefendingLevel = 4;
+                    break;
+                case "ALEPH":
+                    DefendingLevel = 5;
+                    break;
+                default: 
+                    Console.WriteLine("Error: Abno Class Not Recognized");
+                    GenericFunctions.PauseForInput();
+                    break;
+            }
+            
+            LevelMult = MathFunctions.GetLevelDiffMult(AttackingLevel, DefendingLevel);
+            Console.WriteLine($"Damage Mult{DamageMult}");
         }
     }
 }
